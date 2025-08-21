@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第4章 客户尽职审查 - 香港稳定币监管法规解读</title>
+    <meta name="description" content="第4章详解客户尽职审查完整要求，包含40个条款，涵盖身份识别、核实、政治人物筛查、钱包验证等全流程">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="chapter-container">
+        <!-- 章节头部 -->
+        <header class="chapter-header">
+            <h1 class="chapter-title-main">第4章 客户尽职审查</h1>
+            <p class="chapter-subtitle">KYC要求与身份验证完整流程</p>
+            <div class="chapter-meta">
+                <span>共 40 个条款</span>
+                <span>重点关注：合规操作指引</span>
+                <span>合并文档：4a.md + 4b.md</span>
+            </div>
+        </header>
+
+        <!-- 章节导航 -->
+        <nav class="chapter-nav">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">← 返回首页</a>
+                <a href="chapter3.html" class="nav-link">← 上一章</a>
+                <a href="chapter5.html" class="nav-link">下一章 →</a>
+            </div>
+        </nav>
+
+        <!-- 章节简介 -->
+        <section class="chapter-intro">
+            <h2>章节简介</h2>
+            <p>本章是整个监管指引中最详细和最核心的章节，全面规定了客户尽职审查的完整要求。从基础的客户定义、身份识别核实，到复杂的政治人物筛查、钱包地址验证和非托管钱包风险管理，形成了一套完整的稳定币客户管理体系。</p>
+            
+            <div class="chapter-highlights">
+                <h3>本章要点</h3>
+                <ul>
+                    <li><strong>客户分类体系</strong>：客户与非客户稳定币持有人的明确区分</li>
+                    <li><strong>风险为本方法</strong>：三层尽职审查（SDD/CDD/EDD）体系</li>
+                    <li><strong>身份识别核实</strong>：自然人与法人的差异化要求</li>
+                    <li><strong>实益拥有人穿透</strong>：25%门槛与瀑布模型</li>
+                    <li><strong>政治人物管理</strong>：PEP识别、财富来源调查</li>
+                    <li><strong>数字原生要求</strong>：钱包地址验证、区块链分析</li>
+                    <li><strong>中介人依赖</strong>：第三方合作的风险管控</li>
+                    <li><strong>非托管钱包风险</strong>：事前筛选与风险缓释</li>
+                </ul>
+            </div>
+
+            <div class="chapter-structure">
+                <h3>章节结构（40个条款）</h3>
+                <div class="structure-grid">
+                    <div class="structure-item">
+                        <h4>基础概念 (4.1-4.5)</h4>
+                        <p>客户定义、风险为本方法、CDD四要素、触发条件、延迟核实例外</p>
+                    </div>
+                    <div class="structure-item">
+                        <h4>身份识别核实 (4.6-4.11)</h4>
+                        <p>身份信息收集、自然人核实、法人核实、电子KYC、数字足迹采集</p>
+                    </div>
+                    <div class="structure-item">
+                        <h4>实益拥有人 (4.12-4.17)</h4>
+                        <p>关连方识别、UBO定义、25%门槛、复杂结构、代理人验证、业务目的</p>
+                    </div>
+                    <div class="structure-item">
+                        <h4>风险分层 (4.18-4.21)</h4>
+                        <p>风险为本方法、SDD退出机制、高风险审批、第三方分销商</p>
+                    </div>
+                    <div class="structure-item">
+                        <h4>政治人物 (4.22-4.24)</h4>
+                        <p>PEP筛查程序、财富资金来源、风险降级评估</p>
+                    </div>
+                    <div class="structure-item">
+                        <h4>中介人依赖 (4.25-4.30)</h4>
+                        <p>依赖条件、书面确认、数据同步、记录保存、可靠性审查、合规失败</p>
+                    </div>
+                    <div class="structure-item">
+                        <h4>高风险司法管辖区 (4.31-4.35)</h4>
+                        <p>FATF黑名单、金管局通知、钱包类型风险、钱包风险管理基础</p>
+                    </div>
+                    <div class="structure-item">
+                        <h4>钱包管理 (4.36-4.40)</h4>
+                        <p>所有权验证、托管钱包尽职审查、非托管钱包筛选、地址白名单</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 条款内容 -->
+        <main class="articles-container">
+            <!-- 条款 4.1 -->
+            <article class="article-item" id="article-4-1">
+                <header class="article-header">
+                    条款 4.1 - 客户定义与分类
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            在本指引内，"稳定币持有人"一词是指持有某持牌人发行的指明稳定币的人士。如(i)某人与持牌人之间已建立业务关系；或(ii)持牌人为某人执行非经常交易，该人应被视为持牌人的客户（就(i)及(ii)而言，以下称为"客户"或"客户稳定币持有人"）。其他并非持牌人的客户的稳定币持有人则称为"非客户稳定币持有人"。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款对"稳定币持有人"进行了根本性的二元划分：与持牌人有直接业务往来的"客户"，以及在二级市场流转的"非客户稳定币持有人"。这个定义是后续所有合规义务的基础，因为它明确了持牌人需要履行全面客户尽职审查（KYC）的对象范围。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "客户稳定币持有人"是持牌人的直接客户，是KYC的对象。"非客户稳定币持有人"是稳定币在公开市场上的间接持有者，持牌人无法对其进行传统KYC，需要依赖区块链分析等其他风险缓释措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">系统级标签</div>
+                                    <div>公司的核心客户管理和区块链交易系统中，必须建立清晰的分类标签。对于持牌人直接进行过KYC的客户所控制的钱包地址，应标记为"客户地址"；所有其他地址应默认为"非客户地址"。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">政策明确界定</div>
+                                    <div>公司的《反洗钱政策》中，必须有一个"定义"章节，明确引用并阐述本条款对"客户"和"非客户稳定币持有人"的定义。并清晰指出，本政策第四章（客户尽职审查）的所有要求仅适用于"客户"。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">数据关联</div>
+                                    <div>客户数据库必须能够将每一位"客户"的KYC档案，与其在持牌人处用于发行/赎回稳定币的一个或多个区块链钱包地址进行牢固绑定。这是连接链下身份与链上活动的关键。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.2 -->
+            <article class="article-item" id="article-4-2">
+                <header class="article-header">
+                    条款 4.2 - 风险为本方法
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应按风险为本方法进行尽职审查措施，从而使尽职审查措施的程度与客户涉及的洗钱及恐怖分子资金筹集风险相称（见第4.18段）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款将"风险为本方法"（Risk-Based Approach, RBA）正式确立为执行所有"客户尽职审查"（CDD）工作的强制性指导原则。它明确指出，对客户进行背景审查的严格程度不能"一刀切"，而必须与其所呈现的风险水平成正比。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            风险为本方法意味着CDD分为简化（SDD）、标准（CDD）、加强（EDD）三个层次。审查的严格程度与客户风险等级必须存在直接且合理的关联。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">建立客户风险评级模型</div>
+                                    <div>必须制定一份正式的《客户风险评级方法论》文件。该模型应至少包含地域、客户类型、业务/产品、交付渠道四个维度的风险因素，并为每个因素设定评分权重，最终计算出客户的初始风险等级（高、中、低）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设计分层尽职审查程序</div>
+                                    <div>必须制定三套独立的、详细的操作程序文件，分别对应：《简化尽职审查（SDD）程序》、《标准尽职审查（CDD）程序》、《加强尽职审查（EDD）程序》。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.3 -->
+            <article class="article-item" id="article-4-3">
+                <header class="article-header">
+                    条款 4.3 - 尽职审查四要素
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            以下为适用于持牌人的尽职审查措施：<br>
+                            (a) 识别客户的身分，及根据可靠及独立来源所提供的文件、数据或资料，核实客户的身分；<br>
+                            (b) 如就客户而言有实益拥有人，识别及采取合理措施核实该实益拥有人的身分；<br>
+                            (c) 取得与该持牌人建立业务关系（如有）的目的及拟具有的性质的资料，除非有关目的及拟具有的性质显而易见；及<br>
+                            (d) 如某人看似是代表客户行事：<br>
+                            (i) 识别该人的身分，并采取合理措施，根据可靠及独立来源所提供的文件、数据或资料，核实该人的身分；以及<br>
+                            (ii) 核实该人代表客户行事的授权。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为"客户尽职审查"（CDD）提供了一个基础性的、标准化的操作清单，明确列出了构成一次合格的客户身份识别所必须完成的四个核心组成部分，缺一不可。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            四个核心步骤旨在回答：你是谁？（身份识别与核实）；谁在背后控制你？（识别实益拥有人）；你来这里做什么？（了解业务关系目的）；谁授权你来办事？（核实代理人）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">固化工作流程</div>
+                                    <div>将这四个核心步骤设计为客户开户流程中不可跳过的强制性环节。为开户审核人员提供一份详尽的《CDD操作清单》，确保在激活任何账户前，清单上的所有项目都已完成并记录在案。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.4 -->
+            <article class="article-item" id="article-4-4">
+                <header class="article-header">
+                    条款 4.4 - CDD触发条件
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应在以下情况执行尽职审查措施：<br>
+                            (a) 在与该客户建立业务关系之前；<br>
+                            (b) 在为该客户执行任何涉及相等于8,000元或以上款额的非经常交易前（例如发行及赎回稳定币）；<br>
+                            (c) 当持牌人怀疑客户或客户的户口涉及洗钱或恐怖分子资金筹集时；或<br>
+                            (d) 当持牌人怀疑过往为识别客户的身分或核实客户的身分而取得的资料是否真实或充分时。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款明确规定了必须执行"客户尽职审查"（CDD）的四个具体时间点或触发条件，确保尽职审查是一个贯穿客户生命周期的持续过程。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "非经常交易"的8,000港元门槛设定了一个较低的触发标准。"怀疑"是重要的事后审查触发器。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">系统硬性控制</div>
+                                    <div>客户账户的激活按钮必须与CDD流程的"审批通过"状态挂钩。交易系统必须为"非经常交易"设置8,000港元的硬性门槛，一旦达到或超过，交易请求必须暂停并强制跳转至CDD流程。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立事件驱动审查（EDR）机制</div>
+                                    <div>建立正式的《事件驱动审查流程》。当交易监控系统、负面消息筛查或员工上报触发"怀疑"时，必须启动此流程，对客户进行重新审查，并将审查过程和结果完整记录。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.5 -->
+            <article class="article-item" id="article-4-5">
+                <header class="article-header">
+                    条款 4.5 - 延迟核实例外情况
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            在例外的情况下，持牌人可在建立业务关系后才核实客户及该客户的任何实益拥有人的身分，但须符合以下条件：<br>
+                            (a) 能有效管理因延迟核实该客户或其实益拥有人的身分而产生的任何洗钱及恐怖分子资金筹集风险；<br>
+                            (b) 为免干扰与客户的正常业务运作而有必要延迟核实；及<br>
+                            (c) 在合理地切实可行的范围内尽快完成核实。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为"必须在建立业务关系前完成身份核实"的原则，提供了一个严格限制的例外情况。这表明，"后置核实"并非常规操作，而是一个有着严格前置条件和流程管控的应急通道。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "例外的情况下"强调了本条款的适用场景非常有限。持牌人需要能合理解释其完成核实所花费的时间是"合理地切实可行"的。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">制定《延迟核实例外政策》</div>
+                                    <div>制定一份独立的、审批层级非常高的政策文件。文件中必须明确定义何为"例外情况"。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">实施临时限制</div>
+                                    <div>任何适用此政策的账户，在核实完成前必须自动被施加严格的交易限制（例如，仅允许存入，不允许转出或赎回）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">高层审批</div>
+                                    <div>每个延迟核实的案例都必须有高级管理层（如合规主管或首席运营官）的书面批准。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.6 -->
+            <article class="article-item" id="article-4-6">
+                <header class="article-header">
+                    条款 4.6 - 身份识别核实要求
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应识别客户的身分及根据由可靠及独立来源所提供的文件、数据或资料，核实客户的身分。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款确立了客户尽职审查中最基础的步骤，并将其拆解为两个不可分割的连续动作：识别（获取信息）和核实（证明信息真实性）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "识别"是KYC的第一步（收集），"核实"是第二步（验证）。"可靠及独立来源"指不受客户本人控制的证明材料，如政府文件。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">流程分离</div>
+                                    <div>在内部审核流程中，明确区分"信息完整性检查"（识别）和"信息真实性核实"（核实）两个步骤，并要求审核人员分别确认。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">禁止仅依赖客户声明</div>
+                                    <div>内部政策必须明令禁止在未完成"核实"步骤的情况下，批准任何客户的开户申请。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.7 -->
+            <article class="article-item" id="article-4-7">
+                <header class="article-header">
+                    条款 4.7 - 身份信息收集标准
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            作为尽职审查的一部分，持牌人应至少收集以下身分识别资料以识别该客户的身分：<br>
+                            (a) 如客户为自然人：<br>
+                            (i) 全名；<br>
+                            (ii) 出生日期；<br>
+                            (iii) 国籍；<br>
+                            (iv) 住址；及<br>
+                            (v) 独特识别编号（例如身份证或护照号码）及文件类别。<br>
+                            (b) 如客户为法人：<br>
+                            (i) 全名；<br>
+                            (ii) 注册、成立或登记日期；<br>
+                            (iii) 注册、成立或登记地点（包括注册办事处地址）；<br>
+                            (iv) 独特识别编号（例如注册号码或商业登记号码）及文件类别；及<br>
+                            (v) 主要营业地点（如与注册办事处地址不同）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款明确规定了KYC流程中必须收集的最低限度身份资料，是消除匿名性、为后续所有反洗钱措施打下基础的核心数据要求。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "独特识别编号"是进行身份验证和数据匹配的关键字段。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">固化信息采集表</div>
+                                    <div>在客户开户申请表（无论是线上还是纸质）中，将上述所有信息点设为必填项。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">系统字段强制性</div>
+                                    <div>在客户关系管理（CRM）系统中，将对应的字段设为"强制填写"，确保客户档案的完整性。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.8 -->
+            <article class="article-item" id="article-4-8">
+                <header class="article-header">
+                    条款 4.8 - 自然人身份核实
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人在核实属自然人的客户的身分时，应根据可靠及独立来源提供的文件、数据或资料，以核实该客户的姓名、出生日期、独特识别编号及文件类别。有关文件、数据或资料的例子包括：<br>
+                            (a) 香港身份证或其他国家的身份证；<br>
+                            (b) 有效的旅游证件（例如未过期的护照）；或<br>
+                            (c) 其他可靠及独立来源提供的相关文件、数据或资料（例如政府机构发出的文件）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为"自然人"的身份核实提供了具体、可操作的指引，规定了必须核实的四项关键信息和可接受的证明文件类型。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "有效"是关键词，过期的证件通常不能被接受。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">制定《可接受身份证明文件指引》</div>
+                                    <div>创建一份内部指引，用列表和图例清晰说明公司接受哪些国家/地区的哪些类型的身份证明文件，并明确规定所有文件必须在有效期内。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">文件真实性检查</div>
+                                    <div>培训审核人员识别伪造或篡改文件的基本技巧，对于高风险客户或可疑文件，应考虑使用专业的文件验证工具。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.9 -->
+            <article class="article-item" id="article-4-9">
+                <header class="article-header">
+                    条款 4.9 - 法人身份核实
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人在核实属法人的客户的身分时，应根据可靠及独立来源提供的文件、数据或资料，以核实该法人的名称、法定形式、现时仍然存在的证明（於核实的时候）及规管和约束该法人的权力。有关文件、数据或资料的例子包括：<br>
+                            (a) 注册证明书；<br>
+                            (b) 独立公司注册处的纪录；<br>
+                            (c) 注册资料证明书；<br>
+                            (d) 存续证明书；<br>
+                            (e) 登记纪录；<br>
+                            (f) 合伙协议或契约；<br>
+                            (g) 章程文件；或<br>
+                            (h) 其他可靠及独立来源提供的相关文件、数据或资料（例如政府机构发出的文件）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款的核心要求是"独立验证"，持牌人必须通过可靠及独立来源交叉验证，以确保法人客户是真实、合法存在的实体，并了解其权力制约。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "存续证明书"是确认一家公司"活着"的关键文件。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">实施独立的法人验证程序</div>
+                                    <div>对于所有法人客户，KYC流程中必须包含一个强制步骤：由审核人员通过政府官方网站（如公司注册处）或采购第三方商业报告，独立查询并验证客户的注册信息和存续状态。查询结果的截图或报告必须存档。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">强制索取章程文件</div>
+                                    <div>将索取最新的公司章程或类似文件作为法人开户的强制要求，以了解其业务范围和授权代表。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.10 -->
+            <article class="article-item" id="article-4-10">
+                <header class="article-header">
+                    条款 4.10 - 电子KYC要求
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如持牌人的经营模式涉及以非亲身/非面对面方式（例如手机应用程序或互联网等电子渠道）识别及核实自然人的身分，持牌人应：<br>
+                            (a) 根据金管局认可的、属可靠及独立来源的数码识别系统所提供的数据或资料，核实客户的身分；或<br>
+                            (b) 在识别及核实自然人客户的身分时，采用适当的科技方案以缓减有关风险，尤其假冒风险。持牌人采取的科技方案应涵盖以下两方面：<br>
+                            (i) 身分鉴定 - 若透过电子渠道取得自然人客户的身分，持牌人应采取适当科技措施，以确保为核实客户的身分而获取的有关文件、数据或资料的可靠性；及<br>
+                            (ii) 身分配对 - 持牌人应运用适当科技，在无容置疑的情况下确定自然人客户属於(i)项所提供的身分。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为线上e-KYC设定了严格的技术标准，要求持牌人二选一：要么接入官方认可的数字身份系统，要么自建或采购能同时实现"证件防伪"和"人证合一（活体检测）"的强大技术方案。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "假冒风险"是线上KYC的首要风险。"身分鉴定"确保证件是真的，"身分配对"确保操作者是真人且是证件本人。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">进行技术方案尽职调查</div>
+                                    <div>如果选择(b)路径，必须对e-KYC技术供应商进行详尽的尽职调查，并记录在案。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设定清晰的通过/失败阈值</div>
+                                    <div>e-KYC流程必须有明确的自动化判定规则。例如，人脸比对相似度低于特定阈值或活体检测失败，申请必须自动转为"人工审核"队列。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">保留全过程审计日志</div>
+                                    <div>e-KYC系统必须能记录和保留整个验证过程的关键数据，包括客户上传的证件照片、自拍照、活体检测视频片段以及系统的判定结果，以备后续审计和调查。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.11 -->
+            <article class="article-item" id="article-4-11">
+                <header class="article-header">
+                    条款 4.11 - 数字足迹采集
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应取得额外的客户资料，让其得以识别、管理及缓减其交付途径所涉及的洗钱及恐怖分子资金筹集风险。有关额外的客户资料可包括但不限於：互联网规约（IP）地址连同相关的时间印章、地理位置数据、装置识别码（device identifiers）、钱包地址、交易编号（transaction hashes）及其他电子识别码。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款要求持牌人超越传统KYC，必须收集客户的"数字足迹"，目的是将客户的链下真实身份与其链上活动进行链接，并为后续的交易监控和风险分析提供关键数据输入。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            这些技术数据（IP、设备ID、钱包地址等）是情景化客户行为、赋能链上监控和执行制裁合规的"燃料"。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">技术数据采集</div>
+                                    <div>IT部门必须确保公司的前端应用（网站、App）和后端系统能够自动捕获、记录并安全存储条款中列出的所有数字识别信息，并将其与相应的客户账户和交易记录进行关联。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">数据用于风险引擎</div>
+                                    <div>将这些数据作为风险评估和交易监控系统的重要输入变量。例如，建立监控规则：IF IP地理位置 IN (受制裁国家) THEN 阻止交易。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">隐私政策更新</div>
+                                    <div>公司的《个人资料（私隐）政策》必须向客户清晰披露，公司会收集这些类型的技术数据及其用途。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.12 -->
+            <article class="article-item" id="article-4-12">
+                <header class="article-header">
+                    条款 4.12 - 法人关连方识别
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如客户属法人，持牌人应通过取得客户的所有关连方（例如属法团的客户的董事）的姓名或名称以识别其身分。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款规定了对法人客户尽职审查的第一步：必须穿透公司的外壳，识别出那些在背后实际运营和管理这家公司的关键人物（如董事）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "关连方"指所有与该法人客户在管理和控制上存在官方联系的关键个人。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">强制性信息要求</div>
+                                    <div>在法人客户的开户申请表中，将"所有董事名单"和"主要高级管理人员名单"列为必须填写和证明的部分。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">独立核实</div>
+                                    <div>通过独立的商业数据库或公司注册处文件，交叉核对客户所提供的关连方名单的准确性和完整性。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.13 -->
+            <article class="article-item" id="article-4-13">
+                <header class="article-header">
+                    条款 4.13 - 实益拥有人定义
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            实益拥有人是指最终拥有或控制客户，或由客户代其进行交易或活动的自然人。持牌人应识别客户的所有实益拥有人的身分，并采取合理措施核实该实益拥有人的身分，从而使持牌人信纳其知道该实益拥有人为何人。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款下达了三个核心指令：1. 定义清晰：必须追溯到最终的自然人。2. 责任明确：必须同时"识别"和"核实"。3. 标准明确：最终要达到"信纳"的程度，并有证据支撑。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "最终实益拥有人 (UBO)"与"合法拥有人"相对，需穿透多层结构。"合理措施"是一个基于风险的原则。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">要求提供声明和证据</div>
+                                    <div>要求法人客户提供正式的《实益拥有权声明书》，并附上支持性文件（如股权架构图、股东名册）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">核实UBO身份</div>
+                                    <div>对识别出的每一位UBO，都必须按照对自然人客户的标准，获取并核实其身份证明文件。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.14 -->
+            <article class="article-item" id="article-4-14">
+                <header class="article-header">
+                    条款 4.14 - 25%控制权门槛
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如客户为法人，持牌人应识别任何最终掌有该法人的控制性拥有权权益（即25%以上）的自然人，以及任何对该法人或其管理层行使控制权的自然人，并采取合理措施核实其身分。如没有该类自然人，持牌人应识别在该法人担任高级管理人员职位的自然人，并采取合理措施核实其身分。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为识别法人客户的"实益拥有人"提供了强制性的"瀑布模型"方法：首先寻找"所有者"（>25%）和"控制者"，如果找不到，则必须识别并核实"高级管理人员"。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "控制性拥有权权益"设定了25%的量化门槛。"行使控制权"是定性标准。"高级管理人员"是最后的问责对象。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">法人客户尽职审查程序</div>
+                                    <div>制定一份专门的《法人客户尽职审查操作程序》，该程序必须包含一个"实益拥有人识别流程图"，清晰地展示此"瀑布模型"。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">记录识别路径</div>
+                                    <div>审核人员必须在客户档案中明确记录，是通过哪一层级（所有权、控制权、或高级管理层）最终确定了审查对象。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.15 -->
+            <article class="article-item" id="article-4-15">
+                <header class="article-header">
+                    条款 4.15 - 复杂架构穿透
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如客户并非自然人，持牌人应了解该客户的拥有权及控制权结构，包括识别任何中介层（例如审视该客户的拥有权架构图）。目的是依随拥有权结构找出客户的实益拥有人。如客户的拥有权或控制权结构复杂，持牌人应索取足够资料，使其信纳该客户采用该特定结构是有正当理由的。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款要求持牌人必须：1. 绘制并理解所有权"地图"，识别所有中介层；2. 对复杂的结构，必须主动质疑并验证其背后的"故事"是否合理。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "拥有权架构图"是至关重要的文件。"复杂的结构"包括涉及多个避税天堂、循环所有权等。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">强制索取所有权架构图</div>
+                                    <div>将"提供最新的股权架构图，清晰展示至最终自然人"作为法人客户开户的强制性文件要求。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立"复杂结构"的红色警示清单</div>
+                                    <div>制定一份内部指引，列出构成"复杂结构"的特征。一旦命中清单，必须触发EDD流程。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">记录"正当理由"</div>
+                                    <div>对于被判定为"复杂结构"的客户，审核人员必须在客户档案中专门记录其对该结构"正当理由"的评估和结论，即是否信纳其商业逻辑。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.16 -->
+            <article class="article-item" id="article-4-16">
+                <header class="article-header">
+                    条款 4.16 - 代理人身份验证
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应按照客户为自然人或客户为法人时所适用的不同识别及核实身分要求，识别及核实看似是代表客户行事的人的身分。持牌人亦应获取适当的书面证据（例如董事会决议或类似的书面授权），核实每名看似是代表客户行事的人的授权。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为对"客户的代理人"进行尽职审查，设定了强制性的两步验证流程：1. 验证代理人"是谁"；2. 验证代理人的"授权"。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "董事会决议"和"授权委托书"是验证授权的主要文件。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">代理人授权验证程序</div>
+                                    <div>建立标准流程，要求对所有声称代表他人行事的人，必须同时完成：1.对其本人的个人KYC；2.索取并核实正式的书面授权文件（如董事会决议、授权委托书），并将文件存档。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.17 -->
+            <article class="article-item" id="article-4-17">
+                <header class="article-header">
+                    条款 4.17 - 业务关系目的
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应了解业务关系的目的及拟具有的性质。在某些情况下，有关的目的及性质显而易见，但在多数情况下，持牌人或须为此索取相关资料。持牌人为了解有关目的及拟具有的性质而取得的资料，应与客户的风险状况及业务关系的性质相称。此外，如客户并非自然人，持牌人亦应了解客户的业务性质。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款的核心思想是：没有背景的交易无法评估风险。持牌人必须主动了解并记录客户的"目的"（Why）和"性质"（How），以建立一个判断其未来交易是否异常的基准。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "业务关系的目的及拟具有的性质"共同构成了对客户的"预期活动概况"，是交易监控的标尺。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">开户目的必填项</div>
+                                    <div>在开户申请流程中，设置关于"开户目的"和"预期交易模式"（包括频率、金额、主要对手方类型等）的必答题。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立客户画像</div>
+                                    <div>根据客户提供的信息，在客户管理系统中为其创建一个"预期活动画像"。交易监控系统应能将客户的实际交易与此画像进行比对，任何重大偏离都应触发警报。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.18 -->
+            <article class="article-item" id="article-4-18">
+                <header class="article-header">
+                    条款 4.18 - 风险分层审查
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            一般而言，持牌人应在与客户建立任何业务关系前或为客户执行指明的非经常交易前，采取第4.3段列载的全部4项尽职审查措施。持牌人应按风险为本方法决定4项尽职审查措施的程度。如属於高洗钱及恐怖分子资金筹集风险的情况，持牌人应采取严格尽职审查（"严格审查"）措施。如属於低洗钱及恐怖分子资金筹集风险的情况，持牌人可采取简化尽职审查（"简化审查"）措施。所采取的严格审查或简化审查措施，应与持牌人所识别的洗钱及恐怖分子资金筹集风险的性质及水平相称，而有关识别工作须有充足洗钱及恐怖分子资金筹集风险分析支持。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款设定了"先评估，后交易"的根本性门禁规则，并重申了"风险为本方法"的精髓：差异化的审查力度。持牌人有责任证明其风险判断和措施选择的合理性。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            严格尽职审查（EDD）是为高风险情况准备的"加强版"调查。简化尽职审查（SDD）是为极低风险情况准备的"精简版"程序。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">政策规则</div>
+                                    <div>公司的反洗钱政策应明确规定，标准尽职审查（CDD）是默认程序，任何采用EDD或SDD的决定都必须有明确的风险评估结果作为依据并记录在案。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.19 -->
+            <article class="article-item" id="article-4-19">
+                <header class="article-header">
+                    条款 4.19 - SDD退出条件
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            在下述情况下，持牌人不应采取或继续采取简化审查措施：<br>
+                            (a) 持牌人的风险评估结果有所改变，不再认为涉及的洗钱及恐怖分子资金筹集风险属於低；<br>
+                            (b) 持牌人怀疑有洗钱或恐怖分子资金筹集活动；或<br>
+                            (c) 对之前为识别或核实身分而取得的文件或资料的真确性或准确性存疑。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为"简化审查措施"设定了明确的"退出机制"或"失效条件"，要求合规体系必须是动态的，能对风险变化做出及时响应。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            简化审查（SDD）的便利是建立在"风险持续为低"的前提下的。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">自动化风险重评机制</div>
+                                    <div>建立系统规则，当客户触发上述任一条件时（例如，交易行为触发"可疑"警报），系统应自动暂停其"低风险"状态，并将其提交给合规人员进行风险重评。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.20 -->
+            <article class="article-item" id="article-4-20">
+                <header class="article-header">
+                    条款 4.20 - 高风险客户审批
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应取得其高级管理层的批准，才建立可引致高洗钱及恐怖分子资金筹集风险的业务关系，或继续已建立的业务关系，而该关系其后引致高洗钱及恐怖分子资金筹集风险。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为处理高风险客户设定了强制性的内部审批升级机制，要求接纳或维持高风险客户的决定必须由高级管理层正式批准。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "高级管理层的批准"是一个重要的"刹车"机制，旨在明确问责并防止基层因业绩压力而接受不可控的风险。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">建立高风险客户审批流</div>
+                                    <div>在内部审批系统中，建立一个专门的"高风险客户审批通道"。被评为高风险的客户申请，系统会自动流转至预设的高级管理层进行审批，并记录审批意见和时间。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">定期审查升级</div>
+                                    <div>在对现有客户的定期审查中，一旦客户风险等级被调高至"高风险"，同样必须触发此审批流程，以决定是否继续维持业务关系。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.21 -->
+            <article class="article-item" id="article-4-21">
+                <header class="article-header">
+                    条款 4.21 - 第三方分销商
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人可就分销其发行的指明稳定币，与第三方实体（例如《稳定币条例》第9条界定的认许提供者）订立安排。该等第三方实体属持牌人的客户。持牌人应按风险为本方法，对第三方实体执行以下额外尽职审查措施：<br>
+                            (a) 收集有关第三方实体的足够资料，以便能够全面了解该第三方实体的业务性质；<br>
+                            (b) 基於公开资料判断(i)第三方实体的信誉，以及(ii)其经营及/或成立为法团所在的司法管辖区的主管当局对该第三方实体进行的打击洗钱及恐怖分子资金筹集规管与监管的质素及成效；及<br>
+                            (c) 评估第三方实体的打击洗钱及恐怖分子资金筹集管控措施，并信纳有关的打击洗钱及恐怖分子资金筹集管控措施充分并有效。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款要求持牌人不能将分销商视为普通客户，而必须对其进行穿透式的"机构级尽职审查"，实质上是要求持牌人承担起监督其分销渠道合规水平的责任。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "认许提供者"是稳定币生态中的关键节点，其自身的合规防线薄弱会直接传导风险给持牌人。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">制定《分销商尽职审查政策》</div>
+                                    <div>建立专门针对第三方分销商的尽职审查政策和程序。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设计机构尽职调查问卷(DDQ)</div>
+                                    <div>设计一份详细的DDQ，发给潜在的分销商填写。内容需覆盖其股权结构、管理团队、业务模式、许可资质，并重点要求其提供完整的《反洗钱政策》及最近的独立审计报告。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">执行独立背景调查</div>
+                                    <div>合规团队必须进行独立的外部调查，包括检索负面新闻、查询其在当地监管机构的注册和处罚记录等，并将结果与DDQ内容进行交叉验证。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.22 -->
+            <article class="article-item" id="article-4-22">
+                <header class="article-header">
+                    条款 4.22 - 政治人物识别程序
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应设立及维持有效的程序，以判断某客户或某客户的实益拥有人是否政治人物。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            这句话的核心指令是：持牌人必须拥有一套持续有效的机制，来主动识别出其客户或最终控制客户的"真人"中，哪些人具有"政治公众人物"的身份。"设立及维持"意味着程序必须是动态且持续的；"客户或某客户的实益拥有人"明确了审查的穿透性，必须查到最终的自然人。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            政治人物 (Politically Exposed Person, PEP)是国际公认概念，通常包括境外PEP、本地PEP、国际组织PEP，以及其家族成员和关系密切者（RCAs）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">采购并集成商业数据库</div>
+                                    <div>订阅至少一家国际知名的PEP商业数据库（如Refinitiv World-Check, Dow Jones Factiva等）。通过API方式将该数据库查询功能直接嵌入客户引导（Onboarding）流程中，确保在客户账户激活前，自动对客户及其提供的实益拥有人姓名进行强制性筛查。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立筛查与复核流程</div>
+                                    <div>制定一份《政治人物筛查操作手册》。手册需明确定义筛查时的模糊匹配（Fuzzy Match）标准（例如，姓名相似度高于85%即视为潜在匹配），并规定所有潜在匹配必须由合规团队二级人工复核（Maker-Checker）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">实施定期重筛机制</div>
+                                    <div>设定一个自动化的定期重筛（Ongoing Screening）策略。所有存量客户数据应至少每季度或在客户资料发生重大变更时，在后台自动与更新后的PEP数据库进行重新匹配。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.23 -->
+            <article class="article-item" id="article-4-23">
+                <header class="article-header">
+                    条款 4.23 - 财富资金来源
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如某客户或某客户的实益拥有人为非香港政治人物，持牌人应(i)在与该客户建立业务关系之前，或(ii)在维持已建立的业务关系之前（在已建立业务关系后才发现该客户或实益拥有人为非香港政治人物），采取合理措施确立该客户或该实益拥有人的财富来源及资金来源。持牌人亦应为建立或维持与非香港政治人物的业务关系取得其高级管理层的批准。如持牌人与属香港政治人物或国际组织政治人物的个人有业务关系，并识别到较高的洗钱或恐怖分子资金筹集风险，以上规定同样适用。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为处理PEP客户设立了一个双轨制风险管理框架。对"非香港政治人物"采取"默认高风险"的规则，必须无条件执行"确立财富/资金来源"和"高层审批"两项加强措施。而对"香港及国际组织政治人物"则采取风险为本方法，仅在评估其风险为"较高"时，才启动同等的加强措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "财富来源"（Source of Wealth, SoW）关注客户如何积累其全部净资产，是宏观的背景审查。"资金来源"（Source of Funds, SoF）关注用于本次交易的这笔钱从何而来，是微观的交易审查。两者必须相互匹配，以确保客户资产的合法性。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">创建加强尽职审查（EDD）表单</div>
+                                    <div>设计一份标准的《政治人物加强尽职审查报告》模板。对于非香港PEP: 此报告为强制性要求。报告中必须包含专门章节，用于记录客户对其财富来源（SoW）和资金来源（SoF）的声明，并要求客户提供支持性文件（如雇佣合同、公司财报、资产出售协议等）。对于香港/国际组织PEP: 首先需在报告中完成一个"风险评估"部分，基于其职位、影响力、业务性质等因素判断风险是否"较高"。只有评估结果为"较高"时，才需启动SoW/SoF的调查。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立高级管理层审批工作流</div>
+                                    <div>在内部审批系统中，建立一个专门的"PEP客户审批通道"。任何标记为"非香港PEP"或"高风险本地/国际组织PEP"的客户申请，系统必须自动将其申请及《EDD报告》推送至预先设定的高级管理层（例如，合规主管、首席风险官或CEO）进行审批。在获得电子或书面批准前，账户不得激活。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">记录审批决策</div>
+                                    <div>所有高级管理层的审批决策（批准或拒绝）及其理由，都必须被完整记录并附在客户档案中。这不仅是满足合规要求，也是在未来审计或监管查询时，证明公司治理有效性的关键证据。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.24 -->
+            <article class="article-item" id="article-4-24">
+                <header class="article-header">
+                    条款 4.24 - 前PEP风险降级
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            按照风险为本方法，持牌人就前政治人物卸任后在不再造成高洗钱或恐怖分子资金筹集风险的情况下，可决定不采用或不继续采取第4.23段所列载的措施。为评定前政治人物是否不再造成高洗钱及恐怖分子资金筹集风险，持牌人应对该政治人物以往的身分地位所涉及的洗钱及恐怖分子资金筹集风险进行适当评估。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为如何处理"前政治人物"（Former PEPs）的风险降级问题提供了清晰路径。核心在于：PEP身份不会因卸任而自动解除，必须经过一次主动的、有记录的、聚焦于其剩余影响力的专项风险评估后，才能决定是否停止对其采取加强措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "前政治人物"虽然已离任，但可能仍保留影响力或控制着在位时获得的资产，风险不能立即忽视。评估应考虑其职位层级、剩余影响、国家腐败风险、离任时长等因素。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">制定风险降级政策</div>
+                                    <div>在公司的《反洗钱政策》中，设立"政治人物风险管理"章节，并明确写入"前政治人物风险降级程序"。该程序应规定，PEP身份在卸任后至少继续维持12个月，之后方可启动降级评估。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">创建专项评估模板</div>
+                                    <div>设计一份《前政治人物风险降级评估表》。该表格应包含以下必填项：前PEP姓名及曾任职位、卸任日期、对其曾任职位的权力/影响力评级（高/中/低）、对其任职国家的最新腐败指数（如透明国际CPI评分）、通过公开信息检索，评估其当前是否仍保留重要影响力、综合结论：是否建议降级。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设置审批权限</div>
+                                    <div>规定所有"风险降级评估"必须由合规经理或更高级别人员完成，并最终由合规主管签字批准。批准后的评估表必须存档于客户档案中，作为未来审计的依据。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.25 -->
+            <article class="article-item" id="article-4-25">
+                <header class="article-header">
+                    条款 4.25 - 依赖基础条件
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            在不抵触《打击洗钱条例》附表2第18条列载的适用准则的情况下，持牌人可依赖中介人采取第4.3段列载的任何部分的尽职审查措施。然而，持牌人对确保符合尽职审查规定负有最终责任。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款的核心思想是"有条件的授权，但责任自负"。它允许持牌人在满足严格前提条件（遵守附表2第18条）的情况下，依赖合格中介人完成部分CDD工作以提高效率，但最关键的一点是，如果中介人出现任何纰漏，持牌人必须承担全部的法律和声誉后果。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "中介人"通常是其他受监管的金融机构或特定专业人士。"依赖"（Reliance）是直接采纳中介人已完成的CDD结果，而不是简单的流程"外包"（Outsourcing）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">建立中介人尽职调查程序</div>
+                                    <div>在与任何中介人合作前，必须对其进行正式的尽职调查。创建一个《中介人尽职调查问卷》，内容涵盖其公司背景、监管牌照、内部AML/CFT政策、以及技术能力。调查结果需形成报告，由合规主管审批通过后方可建立合作。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">维护合格中介人清单</div>
+                                    <div>建立并维护一份内部的《合格中介人清单》。只有通过上述尽职调查并被列入此清单的机构，业务部门才能与之开展依赖合作。该清单应至少每年复核一次。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">风险评估中的依赖因素</div>
+                                    <div>在公司的机构层面风险评估（EWRA）中，应将"对中介人的依赖程度"作为一个独立的风险因素进行评估。如果公司高度依赖少数几个中介人来获取客户，则该项风险应被评为较高，并需要制定相应的风险缓释措施。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.26 -->
+            <article class="article-item" id="article-4-26">
+                <header class="article-header">
+                    条款 4.26 - 书面确认要求
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            当依赖中介人时，持牌人应：<br>
+                            (a) 取得中介人的书面确认，表示同意作为持牌人的中介人，并订明会采取《打击洗钱条例》附表2第2条指明的哪些尽职审查措施；及<br>
+                            (b) 信纳中介人将应要求提供在执行尽职审查措施过程中取得的任何文件的复本、数据或资料的纪录，而不会有任何延误。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为"依赖关系"的建立设定了两个不可或缺的契约化基础：(a) 必须有一份明确划分CDD责任的书面协议；(b) 必须有充分依据相信并确保能够无延迟地从中介人处获取所有相关文件。这是管理外包风险、厘清责任边界的核心法律动作。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            书面协议需明确由谁来完成识别客户身份、核实实益拥有人等《打击洗钱条例》附表2第2条规定的核心任务。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">起草标准化的中介人协议</div>
+                                    <div>聘请法律顾问，起草一份标准化的《中介人客户尽职审查合作协议》。协议中必须包含以下关键条款：附件A - 责任划分矩阵: 清晰列出《打击洗钱条例》附表2第2条的所有CDD措施，并逐项明确是由持牌人还是中介人负责。信息调取服务水平协议 (SLA): 明确规定，持牌人发出信息调取请求后，中介人必须在X小时内（例如，24小时）提供所需文件副本或数据，并规定违约罚则。最终责任条款: 明确重申，无论责任如何划分，持牌人保留对客户尽职审查的最终法律责任。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">维护中介人档案</div>
+                                    <div>为每一个合作的中介人建立独立的档案夹，存放其尽职调查报告、已签署的合作协议以及所有相关的沟通记录。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.27 -->
+            <article class="article-item" id="article-4-27">
+                <header class="article-header">
+                    条款 4.27 - 数据即时同步
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            借中介人采取尽职审查措施的持牌人，应在该中介人采取该措施后立刻从该中介人取得其在采取该措施时取得的数据或资料，但本段并没有规定持牌人须同时从该中介人取得其在采取该措施时取得的文件的复本、数据或资料的纪录。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款确立了双层信息获取机制。第一层是"即时义务"：在客户关系建立的瞬间，持牌人自己的系统里必须"立刻"拥有客户的核心身份数据。第二层是操作便利：支持这些数据的原始文件副本可以暂时由中介人保管，但持牌人必须确保能随时调阅。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "数据或资料"指结构化的信息（如姓名、生日、证件号），用于输入系统进行筛查和风险评级。"文件的复本"指原始证据的扫描件（如护照PDF）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">建立数据同步API</div>
+                                    <div>在技术层面，要求中介人必须提供一个安全的API接口。当中介人完成一个新客户的尽职审查后，其系统必须通过该API，"立刻"将该客户的核心数据（至少包括姓名、证件类型、证件号码、出生日期、国籍）推送至持牌人的客户管理系统中。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设计客户数据结构</div>
+                                    <div>确保持牌人自身的客户数据库中，有明确字段区分"由本公司直接验证"和"由中介人[中介人名称]验证"的数据来源，以便于追踪和审计。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">数据完整性核对</div>
+                                    <div>建立一个自动化的核对程序，每日检查通过API接收的中介人数据是否完整、格式是否正确，并对发现的任何问题向中介人发出警报。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.28 -->
+            <article class="article-item" id="article-4-28">
+                <header class="article-header">
+                    条款 4.28 - 记录保存承诺
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如该等文件及纪录由中介人备存，持牌人应获中介人承诺，在持牌人与有关客户的业务关系持续期间，以及由有关业务关系终止的日期起计至少5年内，或直至金管局可能指明的有关时间，备存所有相关的尽职审查资料。持牌人应确保在《打击洗钱条例》的备存纪录规定所列明的期间内，在持牌人向该中介人提出要求时，该中介人会在接获该要求后，在合理地切实可行的范围内，尽快向持牌人提供该中介人在采取有关尽职审查措施时取得的任何文件的复本或任何数据或资料的纪录。持牌人亦应获中介人承诺，在中介人即将结业或不再以中介人身分代持牌人行事的情况下，提供所有相关的尽职审查资料的复本。持牌人应不时进行抽样测试，以确保中介人会应要求及时提供尽职审查的资料及文件。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为管理由中介人保存文件的风险，设立了四个强制性管控支柱：1. 获得长期保存的契约承诺；2. 确保随时快速调取的能力；3. 制定应急退出计划（当中介人倒闭或合作终止时）；4. 进行持续的监督抽查。本质是：可以外包操作，但不能外包责任，且必须对外包方进行有效监督。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "承诺"指具有法律约束力的保证，需写入合同。"抽样测试"是主动的监督手段，用于检验中介人的响应速度和文件质量。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">在协议中加入具体条款</div>
+                                    <div>在与中介人签订的《合作协议》中，必须加入专门章节，逐字对应本条款的要求，包括：记录保存（业务关系结束后至少5年）、信息调取SLA、以及数据交还（中介人结业或合作终止时）的详细流程和责任。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立年度抽样测试计划</div>
+                                    <div>合规部门应制定一份《中介人年度抽样测试计划》。计划应明确每年度对每个中介人抽样的客户比例（例如，2%）、测试时间、以及测试内容（例如，请求5个客户的全套CDD文件，并记录响应时间）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">记录测试结果</div>
+                                    <div>每次抽样测试都必须有正式的记录，包括请求发出的时间、收到文件的时间、以及对文件质量的评估。这些记录是向监管机构证明公司履行了监督职责的关键证据。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.29 -->
+            <article class="article-item" id="article-4-29">
+                <header class="article-header">
+                    条款 4.29 - 可靠性审查
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如持牌人对中介人的可靠性有所怀疑，应采取合理措施审视该中介人履行尽职审查职责的能力。如持牌人拟终止与中介人的关系，应立即向中介人取得所有尽职审查资料。如持牌人对中介人先前采取的尽职审查措施有所怀疑，应在合理地切实可行的范围内，尽快进行所须的尽职审查。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款设定了危机应对预案，即"怀疑即审查，终止即收回，回溯即补救"。任何对中介人可靠性的怀疑都必须触发一次临时审查；决定终止关系时，必须立即收回所有客户数据；如果怀疑过往的CDD工作有问题，必须尽快对存量客户进行补救性的重新审查。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            这是一个完整的风险应对机制，涵盖预防、终止和补救三个阶段。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">制定风险触发事件清单</div>
+                                    <div>在内部政策中，明确一份"中介人风险触发事件清单"，例如：中介人受到监管机构公开谴责、涉及重大负面新闻、其所在司法管辖区被列入FATF灰名单等。一旦发生清单所列事件，必须自动触发对该中介人的临时审查。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设计数据迁移与客户补救计划</div>
+                                    <div>预先设计一份《中介人关系终止及客户档案修复标准操作程序》（SOP）。该SOP应详细说明：如何与中介人交接数据、如何验证收回数据的完整性、如何对需要补救的客户进行风险分级，并优先处理最高风险的客户、如何与这些客户进行沟通以重新获取CDD资料。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">执行与记录</div>
+                                    <div>任何根据此条款采取的行动——无论是临时审查、数据收回还是客户补救——都必须有完整的项目记录，包括启动原因、过程、发现和最终结果。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.30 -->
+            <article class="article-item" id="article-4-30">
+                <header class="article-header">
+                    条款 4.30 - 合规失败处理
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如持牌人未能遵守本章列载的相关尽职审查规定，则不得与有关客户建立业务关系，亦不得与该客户进行任何非经常交易，或在合理地切实可行的范围内尽快结束与该客户的业务关系（如适用）。如有知悉或怀疑，应向联合财富情报组提交可疑交易报告。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款的核心是"不合规，不交易"。它为无法完成CDD义务时设定了绝对的行动指令：对新客户，一票否决；对存量客户，强制退出。最关键的是，它建立了从CDD失败到主动报告的联动机制，客户不配合提供信息本身就是一个重大风险信号，可能需要提交可疑交易报告（STR）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "结束业务关系"是一个严谨的流程，包括限制交易、通知客户赎回、转账、关闭账户。"联合财富情报组"（JFIU）是香港接收STR的法定机构。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">建立"拒绝/退出客户"流程</div>
+                                    <div>制定一份《客户接纳及退出政策》，明确无法完成CDD时，业务人员必须拒绝客户申请。对于存量客户，应启动"客户退出程序"，由合规部监督执行，并设定标准的处理时限（例如，30天内完成）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">自动化业务规则</div>
+                                    <div>在客户管理系统中设置硬性规则，如果一个客户的CDD状态被标记为"不完整"或"失败"，系统应自动阻止其进行任何交易（除指定赎回外），直到其状态被合规部门更新。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">制定STR提交决策指引</div>
+                                    <div>为合规团队提供一份内部指引，列出哪些CDD失败的情形应考虑提交STR。例如：客户提供伪造文件、客户在被问及资金来源时突然要求销户、发现客户的实益拥有人与已知犯罪分子有关联等。所有提交或不提交STR的决策都应被记录在案。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.31 -->
+            <article class="article-item" id="article-4-31">
+                <header class="article-header">
+                    条款 4.31 - 高风险司法管辖区
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            对於与来自特别组织对其作出呼吁施行严格审查措施的司法管辖区的自然人及法人（包括金融机构）建立的业务关系及进行的交易，持牌人应按第4.18段所载指引，采取与有关风险相称的严格审查措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款的核心要求是：当一个客户或交易与FATF"黑名单"（被呼吁采取反制措施）上的司法管辖区有关联时，持牌人必须自动启动加强客户尽职审查（EDD），没有任何裁量空间。"应采取"是强制性指令，所采取的EDD措施必须足够有力，以缓释这种极端地理风险。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "特别组织"通常指FATF。"呼吁施行严格审查措施的司法管辖区"特指FATF"黑名单"，这些国家/地区的AML/CFT体系存在严重战略缺陷（如朝鲜、伊朗）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">订阅并集成制裁/高风险国家名单</div>
+                                    <div>确保公司使用的筛查系统（无论是第三方还是自建）包含了最新的FATF"黑名单"和"灰名单"。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">自动化触发EDD</div>
+                                    <div>在客户引导和交易监控系统中设置自动化规则。一旦客户的国籍、居住地，或交易对手的地理位置匹配了FATF"黑名单"，系统必须自动：暂停客户申请或交易、将该客户的风险等级自动提升至"最高"、为合规团队自动创建一个EDD工单。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">制定针对性的EDD程序</div>
+                                    <div>制定专门针对来自FATF"黑名单"司法管辖区客户的EDD操作程序。该程序应要求采取比常规EDD更严格的措施，例如：要求提供更详尽的财富来源证明、了解与该地区关联的每一笔交易的具体目的、并要求更高级别的管理层审批。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.32 -->
+            <article class="article-item" id="article-4-32">
+                <header class="article-header">
+                    条款 4.32 - 金管局强制通知
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如特别组织呼吁采取强制性严格审查或对应措施，或在其他与特别组织所作呼吁无关，但却被视为属较高风险的情况下，金管局亦可透过书面通知：<br>
+                            (a) 对持牌人施加一般责任，要求它须遵守《打击洗钱条例》附表2第15条，实施严格审查措施；或<br>
+                            (b) 要求持牌人采取通知内说明的对应措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款授予了金管局一项直接、主动的干预权力。在响应国际呼吁（如FATF）或基于自身判断出现高风险情况时，金管局可以通过"书面通知"的形式，强制所有持牌人采取统一的防御措施，包括启动法定的严格审查或执行特定的对应措施。这确保了行业能够迅速、步调一致地应对重大威胁。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "严格审查措施"等同于EDD。"对应措施"（Countermeasures）是更严厉的防御行动，旨在从金融上孤立高风险对象，例如限制交易金额甚至终止所有往来。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">建立监管通告监控机制</div>
+                                    <div>指定合规部门专人或团队，负责每日监控金管局官方网站及其他官方渠道发布的通函、指引和书面通知。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">制定紧急指令响应程序</div>
+                                    <div>预先制定一份《金管局紧急指令响应SOP》。该SOP应明确：收到通知后的内部通报路径（由谁通知给谁）、成立跨部门（合规、技术、运营）应急工作组的流程、如何在X小时内（例如，48小时）完成对指令的技术和操作影响评估、如何在Y天内（例如，5个工作日）落实指令要求的系统变更或操作流程调整。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">维护合规变更日志</div>
+                                    <div>建立一份"监管指令合规变更日志"，详细记录公司为响应每一份金管局书面通知所采取的所有行动、负责人和完成日期。这份日志是向监管证明公司执行力的重要文件。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.33 & 4.34 -->
+            <article class="article-item" id="article-4-33-34">
+                <header class="article-header">
+                    条款 4.33 & 4.34 - 钱包类型风险
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容（撮要）</h3>
+                        <div class="section-content">
+                            与银行不同，持牌人不一定会提供托管钱包。稳定币持有人可能使用第三方托管钱包，或非托管钱包。非托管钱包由用户自己持有和控制私钥，可以进行点对点交易而无需经过受监管的中介，其去中心化和缺乏监管监察的特性对不法分子可能特别吸引。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            这两条是风险警示和背景说明。HKMA明确点出了稳定币生态与传统金融的核心区别：价值可以存在於发行人控制范围之外的"非托管钱包"中。并直接将非托管钱包定性为一个潜在的监管盲区和高风险领域，因为它绕过了传统的、由中介机构扮演的监管"关卡"。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "托管钱包"由第三方保管私钥（如交易所账户），类似於银行账户。"非托管钱包"由用户自己保管私钥（如Ledger, MetaMask），用户拥有资产的绝对主权，但也因此成为洗钱的高风险工具。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">开展全员风险意识培训</div>
+                                    <div>定期为所有员工（特别是面向客户的岗位和产品/技术团队）开展关於钱包类型的培训。确保每个人都能清晰地理解托管钱包和非托管钱包的区别，以及后者所带来的固有高风险。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">在风险评估中突出非托管钱包</div>
+                                    <div>在机构层面风险评估（EWRA）中，必须将"与非托管钱包的交互"列为一个独立且固有风险等级为"高"的风险类别，并围绕它设计专门的风险缓释措施。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">向客户进行风险教育</div>
+                                    <div>在用户协议和网站的显著位置，向客户清晰说明使用非托管钱包的责任和潜在风险，并解释为何公司需要对此类钱包采取更严格的审查措施。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.35 -->
+            <article class="article-item" id="article-4-35">
+                <header class="article-header">
+                    条款 4.35 - 钱包风险管理
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应妥善管理客户用作收取持牌人发行的稳定币或於赎回时退回稳定币的钱包所涉及的任何洗钱及恐怖分子资金筹集风险。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款的根本要义在於：持牌人的风险管理责任必须穿透其自身的账本，延伸至与其发生稳定币发行与赎回交易的客户端钱包。持牌人不能采取"币发出后就与我无关"的态度，必须具备评估、监控和管理对手方链上地址风险的能力。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            风险管理责任覆盖所有类型的钱包，包括第三方托管钱包、非托管钱包和智能合约钱包，但重点在於风险最高的非托管钱包。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">采购并集成区块链分析工具</div>
+                                    <div>订阅至少一家主流的区块链分析服务提供商（如Chainalysis, Elliptic, TRM Labs）。通过API将其服务深度集成到公司的核心交易处理流程中，确保每一笔涉及外部钱包的发行和赎回交易，在执行前都能被自动进行风险扫描。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立钱包风险评级模型</div>
+                                    <div>基於区块链分析工具提供的数据，结合公司自身的风险偏好，建立一套内部的"钱包地址风险评级模型"。该模型应至少将钱包分为"低风险/已验证"、"中风险/需关注"、"高风险/需审查"和"禁止/受制裁"等级别。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">制定差异化处理策略</div>
+                                    <div>根据钱包的风险评级，制定并执行差异化的处理策略。例如：低风险: 交易自动通过、中风险: 交易可能会被施加更严格的监控规则、高风险: 交易被自动暂停，并生成警报，由合规团队人工审查后决定放行或拒绝、禁止: 交易被自动拒绝，并可能触发提交STR的决策流程。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.36 -->
+            <article class="article-item" id="article-4-36">
+                <header class="article-header">
+                    条款 4.36 - 钱包地址所有权验证
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            持牌人应识别客户的钱包地址，并透过以下方法确定该客户拥有或控制该钱包：<br>
+                            (a) 利用适当的确认方法测试拥有权，例如要求客户进行微支付测试（即按持牌人指明的细小金额执行转帐）或讯息签署测试（即签署持牌人指明的讯息，然后由持牌人核实该讯息）；<br>
+                            (b) 向有关客户取得证据，例如由有关的托管钱包提供者发出的结单；或<br>
+                            (c) 其他适当及有效的措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款引入了一个加密原生的全新CDD步骤：验证钱包地址的所有权。其核心目标是将经过KYC的"真实世界身份"与区块链上的"虚拟地址"进行关键绑定。条款提供了三种可选路径：密码学方法（微支付/签名）、文件证据法（结单）和开放性条款。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "拥有或控制"指持有与钱包地址关联的私钥。"微支付测试"和"讯息签署测试"是两种通过密码学证明客户持有私钥的常见技术手段。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">开发钱包验证工具</div>
+                                    <div>在客户界面中开发一个自动化的"钱包所有权验证"模块。该模块应能自动生成一个独特的微支付金额或一段待签名的文本，并提供清晰的指引，引导客户完成操作并自动验证结果。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立验证状态数据库</div>
+                                    <div>在客户数据库中，为每一个客户关联的钱包地址增加一个"所有权验证状态"字段（例如，未验证/待验证/已验证/验证失败）。只有"已验证"状态的钱包地址才能被用于发行和赎回。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">记录验证证据</div>
+                                    <div>对每一次成功的验证，都必须保存其证据。对于密码学方法，需记录相关的交易哈希或签名数据；对于文件法，需安全地存储客户上传的结单文件。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.37 -->
+            <article class="article-item" id="article-4-37">
+                <header class="article-header">
+                    条款 4.37 - 托管钱包尽职审查
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            如客户的钱包由托管钱包提供者提供，或是金融机构或虚拟资产服务提供者所用的自持钱包，持牌人应按风险为本方法，执行以下尽职审查措施：<br>
+                            (a) 收集有关托管钱包提供者或自持钱包拥有人的足够资料，以便能够全面了解其业务性质；<br>
+                            (b) 基於公开资料判断(i)托管钱包提供者或自持钱包拥有人的信誉及(ii)在其经营及/或成立为法团所在的司法管辖区的主管当局对该托管钱包提供者或自持钱包拥有人进行的打击洗钱及恐怖分子资金筹集规管与监管的质素及成效；及<br>
+                            (c) 评估托管钱包提供者或自持钱包拥有人的打击洗钱及恐怖分子资金筹集管控措施，并信纳有关的打击洗钱及恐怖分子资金筹集管控措施充分并有效。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款将传统金融的"代理银行尽职审查"原则应用到了虚拟资产世界。当对手方是另一个机构（托管钱包提供者或VASP）时，我们必须对其进行穿透式的机构级尽职审查，全面评估其业务性质、信誉、监管环境和内部AML管控能力，并得出"信纳其管控充分有效"的结论。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "托管钱包提供者"指主流交易所或专业托管机构。"FI或VASP所用的自持钱包"指由机构直接控制私钥的运营钱包，对其审查等同於对该机构的整体审查。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">创建机构对手方尽职调查问卷 (DDQ)</div>
+                                    <div>设计一份详细的《VASP及金融机构尽职调查问卷》，发送给所有希望与之建立业务关系的机构对手方。问卷内容应覆盖条款(a), (b), (c)的所有要点，包括其牌照信息、AML政策副本、主要业务市场、以及最新的Wolfsberg CBDDQ问卷（如果适用）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立风险评级流程</div>
+                                    <div>基於回收的DDQ、公开信息检索和区块链分析工具对该机构地址的评估，建立一个"机构对手方风险评级"流程。将对手方评为"可接受"、"需加强监控"或"不可接受"。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">定期复核</div>
+                                    <div>对所有已建立关系的机构对手方，应至少每年进行一次全面的尽职调查复核，以确保其风险状况没有发生重大恶化。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.38 -->
+            <article class="article-item" id="article-4-38">
+                <header class="article-header">
+                    条款 4.38 - 持续监控豁免
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            除非怀疑涉及洗钱及恐怖分子资金筹集活动，或持牌人在持续监察与托管钱包提供者进行交易时，知悉任何更大的洗钱及恐怖分子资金筹集风险，否则持牌人无需於发行或赎回时就每项稳定币转帐重新进行第 4.37 段所载的尽职审查措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款为与已通过尽职审查的机构伙伴进行常规交易提供了"运营负担豁免"。你不需要在每一次转账时都重复做一遍全套的机构级DDQ。但这个豁免有两个"熔断机制"：1. 当某笔具体交易可疑时；2. 当在持续监察中发现该伙伴的整体风险上升时。一旦触发，豁免即失效。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "持续监察"包括交易层面（监控系统筛查）和关系层面（关注伙伴的声誉、法律和监管状况）。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">区分初始审查与持续监控</div>
+                                    <div>在操作流程上清晰区分"初始机构尽职审查"和"持续交易监控"。一旦对手方通过初始审查，其钱包地址可被加入"受信任的机构对手方"列表。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设定特定的交易监控规则</div>
+                                    <div>为来自这些"受信任"地址的交易设定一套专门的监控规则。这些规则的阈值可以与普通非托管钱包有所不同，但应重点关注与该机构正常业务模式不符的异常行为（如交易金额、频率的突变）。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立负面新闻监控</div>
+                                    <div>利用商业情报工具或订阅服务，建立对所有机构合作伙伴的自动化负面新闻和监管行动监控。一旦出现重大负面信息，应立即触发对该伙伴关系的重新评估。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.39 -->
+            <article class="article-item" id="article-4-39">
+                <header class="article-header">
+                    条款 4.39 - 非托管钱包风险管理
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            当客户使用非托管钱包（第4.37段所涵盖者除外）于发行时从持牌人收取稳定币或于赎回时向持牌人退回稳定币，持牌人应筛选钱包地址，以识别涉及该钱包的交易是否与不法或可疑活动/来源或指定人士直接或间接相关（进一步指引见第5.4、5.5、5.7及5.8段）。如筛选结果显示该钱包的洗钱及恐怖分子资金筹集风险较高，持牌人应在完成相关发行或赎回流程前采取额外的管控措施，例如：<br>
+                            (a) 更严格地监察与该非托管钱包进行的稳定币转帐；及/或<br>
+                            (b) 施加交易限制。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款确立了针对非托管钱包交易的"事前拦截，事中管控"的强制性工作流。它要求将"钱包地址筛选"作为交易完成前的一个强制步骤，以评估其与非法活动的直接或间接关联。如果筛选结果风险较高，必须在交易完成前采取额外管控措施。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            非托管钱包由用户自己保管私钥，具有完全的资产控制权，但也因此成为洗钱的高风险工具。筛选需要使用区块链分析工具来评估地址的风险关联。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">配置自动化筛选与风险评分</div>
+                                    <div>在集成的区块链分析工具中，配置一套清晰的风险评分规则。例如，明确定义资金来源中来自暗网/混币器/受制裁地址的比例达到多少时，该钱包地址将被自动标记为"较高风险"。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立交易暂停与人工审查队列</div>
+                                    <div>在交易处理系统中，建立一个"高风险交易审查队列"。所有被自动化工具标记为"较高风险"的非托管钱包交易，都必须被系统自动暂停，并进入此队列，等待合规分析师进行人工审查和决策。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">定义额外管控措施</div>
+                                    <div>制定一份《高风险非托管钱包交易处理手册》，明确定义可选的"额外管控措施"，例如：要求客户提供资金来源证明、拒绝本次交易、或对此客户设置更低的单日/单笔限额。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 条款 4.40 -->
+            <article class="article-item" id="article-4-40">
+                <header class="article-header">
+                    条款 4.40 - 钱包地址白名单管理
+                </header>
+                <div class="article-content">
+                    <div class="article-section">
+                        <h3 class="section-title">条款内容</h3>
+                        <div class="section-content">
+                            为便利迅速识别钱包，持牌人可就已进行第4.36至4.39段所载措施（如适用）的客户钱包维持一份钱包地址清单。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">核心解读</h3>
+                        <div class="section-content">
+                            此条款允许并建议持牌人建立一个"钱包地址白名单"（Whitelist）。这份名单记录了已成功通过所有权验证和其他尽职审查的客户钱包地址。其主要目的是提升后续交易的处理效率，通过迅速识别已知、可信的地址，可能简化或加速处理流程。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section">
+                        <h3 class="section-title">概念说明</h3>
+                        <div class="section-content">
+                            "钱包地址清单"在此特指"白名单"，即一个已验证地址与已KYC客户身份绑定的数据库。
+                        </div>
+                    </div>
+                    
+                    <div class="article-section compliance-guidance">
+                        <h3 class="section-title">🎯 合规操作指引</h3>
+                        <div class="section-content">
+                            <ul class="compliance-list">
+                                <li>
+                                    <div class="compliance-item-title">开发钱包白名单功能</div>
+                                    <div>在客户管理系统中，为每个客户账户开发一个"钱包地址管理"或"白名单管理"功能。只有通过了条款4.36所有权验证的钱包地址，才能被客户添加到这个白名单中。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">设定白名单交易规则</div>
+                                    <div>在交易处理逻辑中，优先处理发往或来自客户白名单地址的交易。例如，可以为这些交易设置更高的自动处理限额，或应用简化的监控规则。</div>
+                                </li>
+                                <li>
+                                    <div class="compliance-item-title">建立灰名单/黑名单机制</div>
+                                    <div>作为补充，应建立"灰名单"（需要加强审查的地址）和"黑名单"（禁止交易的地址，如已确认的制裁地址或诈骗地址）数据库。在处理任何交易前，系统应首先检查对手方地址是否在黑名单上，如果在，则立即自动拒绝。</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+
+        <!-- 章节导航 -->
+        <nav class="chapter-nav chapter-nav-bottom">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">← 返回首页</a>
+                <a href="chapter3.html" class="nav-link">← 第3章</a>
+                <a href="chapter5.html" class="nav-link">第5章 →</a>
+            </div>
+        </nav>
+
+        <!-- 章节目录 -->
+        <aside class="chapter-toc">
+            <h3>本章目录</h3>
+            <ul>
+                <li><a href="#article-4-1">条款 4.1 - 客户定义与分类</a></li>
+                <li><a href="#article-4-2">条款 4.2 - 风险为本方法</a></li>
+                <li><a href="#article-4-3">条款 4.3 - 尽职审查四要素</a></li>
+                <li><a href="#article-4-4">条款 4.4 - CDD触发条件</a></li>
+                <li><a href="#article-4-5">条款 4.5 - 延迟核实例外情况</a></li>
+                <li><a href="#article-4-6">条款 4.6 - 身份识别核实要求</a></li>
+                <li><a href="#article-4-7">条款 4.7 - 身份信息收集标准</a></li>
+                <li><a href="#article-4-8">条款 4.8 - 自然人身份核实</a></li>
+                <li><a href="#article-4-9">条款 4.9 - 法人身份核实</a></li>
+                <li><a href="#article-4-10">条款 4.10 - 电子KYC要求</a></li>
+                <li><a href="#article-4-11">条款 4.11 - 数字足迹采集</a></li>
+                <li><a href="#article-4-12">条款 4.12 - 法人关连方识别</a></li>
+                <li><a href="#article-4-13">条款 4.13 - 实益拥有人定义</a></li>
+                <li><a href="#article-4-14">条款 4.14 - 25%控制权门槛</a></li>
+                <li><a href="#article-4-15">条款 4.15 - 复杂架构穿透</a></li>
+                <li><a href="#article-4-16">条款 4.16 - 代理人身份验证</a></li>
+                <li><a href="#article-4-17">条款 4.17 - 业务关系目的</a></li>
+                <li><a href="#article-4-18">条款 4.18 - 风险分层审查</a></li>
+                <li><a href="#article-4-19">条款 4.19 - SDD退出条件</a></li>
+                <li><a href="#article-4-20">条款 4.20 - 高风险客户审批</a></li>
+                <li><a href="#article-4-21">条款 4.21 - 第三方分销商</a></li>
+                <li><a href="#article-4-22">条款 4.22 - 政治人物识别程序</a></li>
+                <li><a href="#article-4-23">条款 4.23 - 财富资金来源</a></li>
+                <li><a href="#article-4-24">条款 4.24 - 前PEP风险降级</a></li>
+                <li><a href="#article-4-25">条款 4.25 - 依赖基础条件</a></li>
+                <li><a href="#article-4-26">条款 4.26 - 书面确认要求</a></li>
+                <li><a href="#article-4-27">条款 4.27 - 数据即时同步</a></li>
+                <li><a href="#article-4-28">条款 4.28 - 记录保存承诺</a></li>
+                <li><a href="#article-4-29">条款 4.29 - 可靠性审查</a></li>
+                <li><a href="#article-4-30">条款 4.30 - 合规失败处理</a></li>
+                <li><a href="#article-4-31">条款 4.31 - 高风险司法管辖区</a></li>
+                <li><a href="#article-4-32">条款 4.32 - 金管局强制通知</a></li>
+                <li><a href="#article-4-33-34">条款 4.33 & 4.34 - 钱包类型风险</a></li>
+                <li><a href="#article-4-35">条款 4.35 - 钱包风险管理</a></li>
+                <li><a href="#article-4-36">条款 4.36 - 钱包地址所有权验证</a></li>
+                <li><a href="#article-4-37">条款 4.37 - 托管钱包尽职审查</a></li>
+                <li><a href="#article-4-38">条款 4.38 - 持续监控豁免</a></li>
+                <li><a href="#article-4-39">条款 4.39 - 非托管钱包风险管理</a></li>
+                <li><a href="#article-4-40">条款 4.40 - 钱包地址白名单管理</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- 回到顶部按钮 -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()" title="回到顶部">
+        <span>↑</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 回到顶部功能
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 显示/隐藏回到顶部按钮
+        window.addEventListener('scroll', function() {
+            const backToTopBtn = document.getElementById('backToTop');
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // 平滑滚动到锚点
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 高亮当前可见的条款并自动滚动侧边栏
+        function highlightVisibleArticle() {
+            const articles = document.querySelectorAll('.article-item');
+            const tocLinks = document.querySelectorAll('.chapter-toc a[href^="#"]');
+            
+            let currentArticle = null;
+            articles.forEach(article => {
+                const rect = article.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 100) {
+                    currentArticle = article;
+                }
+            });
+            
+            // 移除所有高亮
+            tocLinks.forEach(link => link.classList.remove('active'));
+            
+            // 高亮当前条款并自动滚动侧边栏
+            if (currentArticle) {
+                const targetId = currentArticle.id;
+                const activeLink = document.querySelector(`.chapter-toc a[href="#${targetId}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                    
+                    // 自动滚动侧边栏到当前条款
+                    const toc = document.querySelector('.chapter-toc');
+                    if (toc) {
+                        const linkPosition = activeLink.offsetTop;
+                        const tocHeight = toc.clientHeight;
+                        const scrollTarget = Math.max(0, linkPosition - tocHeight / 2);
+                        
+                        toc.scrollTo({
+                            top: scrollTarget,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            }
+        }
+
+        // 监听滚动事件，实时高亮
+        window.addEventListener('scroll', highlightVisibleArticle);
+        
+        // 页面加载完成后执行一次
+        document.addEventListener('DOMContentLoaded', highlightVisibleArticle);
+    </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devinrcai
+    </title>
+    <meta name="description" content="专业的香港稳定币监管法规解读网站，提供完整的合规操作指引和法律条款详解">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 加载状态指示器 -->
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>正在加载法规内容...</p>
+        </div>
+    </div>
+
+    <!-- 主框架 -->
+    <div id="main-container" class="main-container">
+        <!-- 页面头部 -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="site-title">
+                    <span class="title-main">香港稳定币监管法规</span>
+                    <span class="title-sub">专业合规解读指引 by devinrcai</span>
+                </h1>
+                <div class="header-meta">
+                    <span class="regulation-title">《打击洗钱及恐怖分子资金筹集指引》</span>
+                    <span class="authority">香港金融管理局</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- 面包屑导航 -->
+        <nav class="breadcrumb" id="breadcrumb">
+            <div class="breadcrumb-content">
+                <a href="#" onclick="showHome()" class="breadcrumb-link">首页</a>
+                <span class="breadcrumb-separator">›</span>
+                <span class="breadcrumb-current" id="breadcrumb-current">概览</span>
+            </div>
+        </nav>
+
+        <!-- 顶部导航栏 -->
+        <nav class="top-navigation">
+            <div class="nav-container">
+                <button class="nav-toggle" id="navToggle" onclick="toggleNavigation()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu" id="navMenu">
+                    <div class="nav-sections">
+                        <div class="nav-section">
+                            <h3 class="nav-section-title">基础章节</h3>
+                            <div class="nav-links">
+                                <a href="#" onclick="loadChapter(1)" class="nav-link" data-chapter="1">
+                                    <span class="nav-number">01</span>
+                                    <span class="nav-title">概述和适用范围</span>
+                                </a>
+                                <a href="#" onclick="loadChapter(2)" class="nav-link" data-chapter="2">
+                                    <span class="nav-number">02</span>
+                                    <span class="nav-title">风险评估要求</span>
+                                </a>
+                                <a href="#" onclick="loadChapter(3)" class="nav-link" data-chapter="3">
+                                    <span class="nav-number">03</span>
+                                    <span class="nav-title">内部管控制度</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-section">
+                            <h3 class="nav-section-title">核心章节</h3>
+                            <div class="nav-links">
+                                <a href="#" onclick="loadChapter(4)" class="nav-link priority-high" data-chapter="4">
+                                    <span class="nav-number">04</span>
+                                    <span class="nav-title">客户尽职审查</span>
+                                    <span class="nav-badge">重点</span>
+                                </a>
+                                <a href="#" onclick="loadChapter(5)" class="nav-link priority-high" data-chapter="5">
+                                    <span class="nav-number">05</span>
+                                    <span class="nav-title">交易监控</span>
+                                    <span class="nav-badge">重点</span>
+                                </a>
+                                <a href="#" onclick="loadChapter(6)" class="nav-link" data-chapter="6">
+                                    <span class="nav-number">06</span>
+                                    <span class="nav-title">记录保存</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-section">
+                            <h3 class="nav-section-title">管理章节</h3>
+                            <div class="nav-links">
+                                <a href="#" onclick="loadChapter(7)" class="nav-link" data-chapter="7">
+                                    <span class="nav-number">07</span>
+                                    <span class="nav-title">员工培训</span>
+                                </a>
+                                <a href="#" onclick="loadChapter(8)" class="nav-link" data-chapter="8">
+                                    <span class="nav-number">08</span>
+                                    <span class="nav-title">内部审计</span>
+                                </a>
+                                <a href="#" onclick="loadChapter(9)" class="nav-link" data-chapter="9">
+                                    <span class="nav-number">09</span>
+                                    <span class="nav-title">监管合作</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 导航底部重要提示 -->
+                    <div class="nav-notice">
+                        <div class="notice-content">
+                            <h4>合规提醒</h4>
+                            <p>本指引具有法律约束力，违反后果等同于违反《稳定币条例》</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <!-- 内容显示区域 -->
+            <section class="content-area">
+                <!-- 首页内容 -->
+                <div id="home-content" class="home-content">
+                    <!-- Hero区域重新设计 -->
+                    <div class="hero-section">
+                        <div class="hero-content">
+                            <h1 class="hero-title">香港稳定币监管法规专业解读</h1>
+                            <p class="hero-subtitle">全面理解《打击洗钱及恐怖分子资金筹集指引》的核心要求与合规路径</p>
+                        </div>
+                        
+                        <!-- 核心价值主张 - 横向排列 -->
+                        <div class="value-proposition">
+                            <div class="value-item">
+                                <div class="value-icon">📋</div>
+                                <h3>9个核心章节</h3>
+                                <p>涵盖稳定币发行人的所有合规义务</p>
+                            </div>
+                            <div class="value-divider"></div>
+                            <div class="value-item">
+                                <div class="value-icon">⚖️</div>
+                                <h3>法律约束力</h3>
+                                <p>基于《稳定币条例》的强制性要求</p>
+                            </div>
+                            <div class="value-divider"></div>
+                            <div class="value-item">
+                                <div class="value-icon">🎯</div>
+                                <h3>合规操作指引</h3>
+                                <p>详细的执行步骤和最佳实践</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 特色功能 - 新设计为一行展示 -->
+                    <div class="features-section">
+                        <div class="section-header">
+                            <h2>网站特色功能</h2>
+                            <p class="section-description">专业的法律文档解读工具，让复杂的监管要求变得简单易懂</p>
+                        </div>
+                        
+                        <div class="features-showcase">
+                            <div class="feature-highlight">
+                                <div class="feature-icon">🏗️</div>
+                                <h3>五板块结构</h3>
+                                <p>条款编号、内容、解读、概念说明、合规操作指引</p>
+                            </div>
+                            <div class="feature-highlight">
+                                <div class="feature-icon">🎯</div>
+                                <h3>重点突出</h3>
+                                <p>合规操作指引采用特殊视觉设计</p>
+                            </div>
+                            <div class="feature-highlight">
+                                <div class="feature-icon">📱</div>
+                                <h3>响应式设计</h3>
+                                <p>支持多种设备，随时查阅法规</p>
+                            </div>
+                            <div class="feature-highlight">
+                                <div class="feature-icon">🧭</div>
+                                <h3>快速导航</h3>
+                                <p>清晰的目录和条款级导航系统</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 推荐章节 - 横向滚动设计 -->
+                    <div class="recommended-sections">
+                        <div class="section-header">
+                            <h2>推荐阅读章节</h2>
+                            <p class="section-description">根据合规重要性，为您推荐重点关注的核心章节</p>
+                        </div>
+                        
+                        <div class="recommendations-scroll">
+                            <div class="recommendation-card priority-high">
+                                <div class="card-header">
+                                    <span class="priority-badge high">重点</span>
+                                    <span class="chapter-number">04</span>
+                                </div>
+                                <div class="card-content">
+                                    <h3>客户尽职审查</h3>
+                                    <p>KYC要求与身份验证程序，稳定币发行人合规的基础环节</p>
+                                    <a href="#" onclick="loadChapter(4)" class="card-action">开始阅读</a>
+                                </div>
+                            </div>
+                            
+                            <div class="recommendation-card priority-high">
+                                <div class="card-header">
+                                    <span class="priority-badge high">重点</span>
+                                    <span class="chapter-number">05</span>
+                                </div>
+                                <div class="card-content">
+                                    <h3>交易监控</h3>
+                                    <p>可疑交易识别与报告，防范洗钱风险的关键措施</p>
+                                    <a href="#" onclick="loadChapter(5)" class="card-action">开始阅读</a>
+                                </div>
+                            </div>
+                            
+                            <div class="recommendation-card priority-medium">
+                                <div class="card-header">
+                                    <span class="priority-badge medium">核心</span>
+                                    <span class="chapter-number">01</span>
+                                </div>
+                                <div class="card-content">
+                                    <h3>概述和适用范围</h3>
+                                    <p>指引的法律基础和适用对象，理解整体框架的起点</p>
+                                    <a href="#" onclick="loadChapter(1)" class="card-action">开始阅读</a>
+                                </div>
+                            </div>
+                            
+                            <div class="recommendation-card priority-medium">
+                                <div class="card-header">
+                                    <span class="priority-badge medium">核心</span>
+                                    <span class="chapter-number">02</span>
+                                </div>
+                                <div class="card-content">
+                                    <h3>风险评估要求</h3>
+                                    <p>机构层面风险识别与评估，建立完善的风险管理体系</p>
+                                    <a href="#" onclick="loadChapter(2)" class="card-action">开始阅读</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 章节内容区域 -->
+                <div id="chapter-content" class="chapter-content" style="display: none;">
+                    <!-- 章节内容将在这里动态渲染 -->
+                </div>
+            </section>
+        </main>
+
+        <!-- 回到顶部按钮 -->
+        <button id="backToTop" class="back-to-top" onclick="scrollToTop()" title="回到顶部">
+            <span>↑</span>
+        </button>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于本网站</h3>
+                <p>本网站基于香港金融管理局发布的《打击洗钱及恐怖分子资金筹集指引》制作，旨在帮助稳定币发行人理解和执行相关合规要求。</p>
+            </div>
+            <div class="footer-section">
+                <h3>免责声明</h3>
+                <p>本网站内容仅供参考，不构成法律建议。具体的合规问题请咨询专业法律顾问。</p>
+            </div>
+            <div class="footer-section">
+                <h3>最后更新</h3>
+                <p>内容基于2025年8月最新的监管指引整理</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 香港稳定币监管法规解读网站. 仅供学习参考使用.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
